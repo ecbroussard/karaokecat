@@ -2,27 +2,56 @@
 <html>
 	<head>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="scripts/jquery-2.1.4.min.js"></script>
 		<meta charset="utf-8">
 		<title>Karaoke Cat</title>
 		<link rel="stylesheet" href="styles/splashstyles.css" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div id="splashlogo" class="flip-container" ontouchstart="this.classList.toggle('hover');">
-			<div class="flipper">
-				<!--front content start -->
-				<div class="front">
-					<figure>
-					<img src="images/kclogo.png" alt="Karaoke Cat" title="Karaoke Cat" width="500" />
-					</figure>
+		<div id="splashcontent">
+			<h1 id="splashtitletop">It's <span id="hour">10</span>:<span id="minute">35</span> <span id="timeofday">p.m.</span></h1>
+			<h1 id="splashtitlebottom">Time to sing karaoke!</h1>
+			<div id="splashlogo" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+					<!--front content start -->
+					<div class="front">
+						<figure>
+						<img src="images/kclogo.png" alt="Karaoke Cat" title="Karaoke Cat" width="500" />
+						</figure>
+					</div>
+					<!--front content end -->
+					<!--back content start -->
+					<div class="back">
+						<a href="welcome.html">ENTER</a>
+					</div>
+					<!--back content end -->
 				</div>
-				<!--front content end -->
-				<!--back content start -->
-				<div class="back">
-					<a href="welcome.html">ENTER</a>
-				</div>
-				<!--back content end -->
 			</div>
 		</div>
+		<script>
+			$(document).ready(function() {
+				var currenttime = new Date();
+				var hour = currenttime.getHours();
+				if (hour >= 0 && hour < 12) {
+					var timeofday = 'a.m.';
+				}
+				else { var timeofday = 'p.m.';
+				}
+				if (hour == 0) {
+					hour = 12;
+				}
+				else if (hour > 12) {
+					hour -= 12;
+				}
+				var minute = currenttime.getMinutes();
+				if (minute < 10) {
+					minute = "0" + minute;
+				}
+				$("#hour").text(hour);
+				$("#minute").text(minute);
+				$("#timeofday").text(timeofday);
+			});
+		</script>
 	</body>
 </html>

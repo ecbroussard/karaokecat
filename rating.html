@@ -4,9 +4,12 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<script src="scripts/jquery-2.1.4.min.js"></script>
 		<script src="scripts/jqfloat.js"></script>
+		<script src="scripts/modernizr.js"></script>
+		<script src="scripts/main.js"></script>
 		<meta charset="utf-8">
 		<title>Karaoke Cat - Rating System</title>
 		<link rel="stylesheet" href="styles/insidestyles.css" type="text/css">
+		<link rel="stylesheet" href="styles/animatedheadline.css" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	</head>
@@ -31,8 +34,25 @@
 				</nav>
 			</header>
 			<main>
-				<figure>
-				<img src="images/kcportrait.jpg" alt="Karaoke Cat" title="Karaoke Cat" width="250" />
+				<figure id="kcportrait">
+					<img src="images/kcportrait.jpg" alt="Karaoke Cat" title="Karaoke Cat" width="250" />
+					<figcaption class="cd-headline loading-bar">
+						<p>
+							<span>Karaoke Cat is now singing</span>
+							<span class="cd-words-wrapper">
+								<b class="is-visible">"Say It Ain't So" by Weezer.</b>
+								<b>"Take on Me" by A-ha.</b>
+								<b>"Rooster" by Alice in Chains.</b>
+								<b>"Creep" by Radiohead.</b>
+								<b>"Spiderwebs" by No Doubt.</b>
+								<b>"Take a Bow" by Madonna.</b>
+								<b>"The Scientist" by Coldplay.</b>
+								<b>"Crazy" by Patsy Cline.</b>
+								<b>"What I Got" by Sublime.</b>
+								<b>"Piano Man" by Billy Joel.</b>
+							</span>
+						</p>
+					</figcaption>
 				</figure>
 				<article>
 					<h1>Hi, I'm karaoke cat!</h1>

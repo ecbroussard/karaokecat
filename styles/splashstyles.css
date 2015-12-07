@@ -16,6 +16,22 @@ figure {
 	display: block;
 }
 
+h1 {
+	text-align: center;
+	color: white;
+	font-family: 'Sigmar One', cursive;
+	font-size: 350%;
+	text-shadow: 2px 2px 2px #969696;
+}
+
+#splashtitletop {
+	margin-top: 100px;
+}
+
+#splashtitlebottom {
+	margin-top: 300px;
+}
+
 #splashlogo {
 	width: 500px;
 	height: 250px;
