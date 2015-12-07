@@ -99,16 +99,11 @@ main p a:hover {
 	color: #E2635D;
 }
 
-article p:first-child, .makemeblue {
+h1 {
 	color: #0071BC;
 	font-family: 'Sigmar One', cursive;
 	font-size: 175%;
 	text-shadow: 2px 2px 2px #969696;
-}
-
-article p:nth-child(2) {
-	font-weight: bold;
-	font-size: 120%;
 }
 
 footer {

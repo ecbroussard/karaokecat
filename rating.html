@@ -2,8 +2,10 @@
 <html>
 	<head>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="scripts/jquery-2.1.4.min.js"></script>
+		<script src="scripts/jqfloat.js"></script>
 		<meta charset="utf-8">
-		<title>Karaoke Cat - Home</title>
+		<title>Karaoke Cat - Rating System</title>
 		<link rel="stylesheet" href="styles/insidestyles.css" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -15,16 +17,16 @@
 				<img src="images/kclogo.png" alt="Karaoke Cat" title="Karaoke Cat" width="350" />
 				</figure>
 				<div id="social">
-						<a href="http://facebook.com"><img src="images/facebook.png" height="65" alt="facebook" title="facebook"></a>
-						<a href="http://twitter.com"><img src="images/twitter.png" height="65" alt="twitter" title="twitter"></a>
-						<a href="http://youtube.com"><img src="images/youtube.png" height="65" alt="youtube" title="youtube"></a>
-						<a href="http://instagram.com"><img src="images/instagram.png" height="65" alt="instagram" title="instagram"></a>
+						<a href="http://facebook.com"><img class="float" src="images/facebook.png" height="65" alt="facebook" title="facebook"></a>
+						<a href="http://twitter.com"><img class="float" src="images/twitter.png" height="65" alt="twitter" title="twitter"></a>
+						<a href="http://youtube.com"><img class="float" src="images/youtube.png" height="65" alt="youtube" title="youtube"></a>
+						<a href="http://instagram.com"><img class="float" src="images/instagram.png" height="65" alt="instagram" title="instagram"></a>
 				</div>
 				<nav>
 					<ul>
-						<li><a href="home.html">Home</a></li>
+						<li><a href="welcome.html">Home</a></li>
+						<li><a href="rating.html">Rating System</a></li>
 						<li><a href="reviews.html">Venue Reviews</a></li>
-						<li><a href="contact.html">Contact Me</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -33,7 +35,7 @@
 				<img src="images/kcportrait.jpg" alt="Karaoke Cat" title="Karaoke Cat" width="250" />
 				</figure>
 				<article>
-					<p>Hi, I'm karaoke cat!</p>
+					<h1>Hi, I'm karaoke cat!</h1>
 					<p>Welcome to my review site.</p>
 					<p>I love, love, love singing karaoke, but some karaoke venues are way better than others. In my quest to find the perfect karaoke spot, I've spent many disappointing nights munching on tasteless mozzarella sticks while waiting three hours for my turn to sing one measly song. I have endured these sacrifices, so you don't have to.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel libero id libero rhoncus interdum. Mauris efficitur leo ut ex volutpat condimentum. Nam velit felis, tempor sit amet sodales at, ornare nec elit. Suspendisse sit amet sem nec est laoreet interdum. Curabitur eu felis ut est pulvinar ultrices. Suspendisse ante velit, laoreet id lobortis id, accumsan at nibh. Phasellus eget purus mauris. Donec hendrerit aliquam diam, id blandit enim fringilla eget.</p>
@@ -45,12 +47,20 @@
 			</main>
 			<footer>
 				<ul>
-					<li><a href="home.html">Home</a></li>
-					<li><a href="reviews.html">Venue Reviews</a></li>
-					<li><a id="endfooternav" href="contact.html">Contact Me</a></li>
+					<li><a href="welcome.html">Home</a></li>
+					<li><a href="rating.html">Rating System</a></li>
+					<li><a id="endfooternav" href="reviews.html">Venue Reviews</a></li>
 					<p>&copy 2015 KaraokeCat</p>
 				</ul>
 			</footer>
 		</div>
+		<script>
+			$(document).ready(function() {
+			$('.float').jqFloat({
+				height: 30,
+				width: 60
+			});
+			});
+		</script>
 	</body>
 </html>
