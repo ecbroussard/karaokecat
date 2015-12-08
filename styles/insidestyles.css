@@ -72,6 +72,11 @@ nav li a:hover {
 	text-shadow: 2px 2px 2px #969696;
 }
 
+.rating {
+	border: none;
+	margin-top: 10px;
+}
+
 main {
 	padding-left: 50px;
 	padding-right: 50px;
@@ -99,9 +104,19 @@ main figcaption {
 	width: 250px;
 }
 
-main p {
+main p, main li {
 	font-family: 'Open Sans', sans-serif;
 	padding-bottom: 10px;
+}
+
+main ul {
+	list-style-type: none;
+}
+
+main li {
+	background: url(../images/musicbullet.png) no-repeat left top;
+	height: 25px;
+	padding-left: 25px;
 }
 
 main p a {
@@ -118,6 +133,11 @@ h1 {
 	font-family: 'Sigmar One', cursive;
 	font-size: 175%;
 	text-shadow: 2px 2px 2px #969696;
+}
+
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 120%;
 }
 
 footer {

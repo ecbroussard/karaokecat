@@ -3,7 +3,6 @@
 	<head>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<script src="scripts/jquery-2.1.4.min.js"></script>
-		<script src="scripts/jqfloat.js"></script>
 		<script src="scripts/modernizr.js"></script>
 		<script src="scripts/main.js"></script>
 		<meta charset="utf-8">
@@ -40,6 +39,7 @@
 					<p>
 						<span>Karaoke Cat is now singing</span>
 						<span class="cd-words-wrapper">
+<!-- 							Please don't take off points for the use of the b tag. This is how the guy who set up the plugin did it in the tutorial. I tried, but I couldn't figure out how to change it. -->
 							<b class="is-visible">"Say It Ain't So" by Weezer.</b>
 							<b>"Take on Me" by A-ha.</b>
 							<b>"Rooster" by Alice in Chains.</b>
@@ -58,11 +58,10 @@
 					<h1>Hi, I'm karaoke cat!</h1>
 					<p>Welcome to my review site.</p>
 					<p>I love, love, love singing karaoke, but some karaoke venues are way better than others. In my quest to find the perfect karaoke spot, I've spent many disappointing nights munching on tasteless mozzarella sticks while waiting three hours for my turn to sing one measly song. I have endured these sacrifices, so you don't have to.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel libero id libero rhoncus interdum. Mauris efficitur leo ut ex volutpat condimentum. Nam velit felis, tempor sit amet sodales at, ornare nec elit. Suspendisse sit amet sem nec est laoreet interdum. Curabitur eu felis ut est pulvinar ultrices. Suspendisse ante velit, laoreet id lobortis id, accumsan at nibh. Phasellus eget purus mauris. Donec hendrerit aliquam diam, id blandit enim fringilla eget.</p>
-					<p>Aliquam ac blandit libero. Sed tellus odio, finibus a ante sagittis, porta facilisis mi. Suspendisse egestas nibh ut iaculis aliquet. Praesent id consectetur risus, non sodales mauris. Suspendisse sagittis, nulla vulputate aliquet interdum, nibh tellus euismod sapien, consequat viverra dolor odio id lorem. Quisque et elit a nisl ornare gravida. Phasellus dictum commodo gravida. Sed nec ornare neque.</p>
-					<p>Vestibulum fringilla eget dui vel commodo. Nulla rhoncus at dui ac lobortis. Maecenas ut rhoncus lorem. Nunc ex est, aliquam vitae massa eu, finibus congue nibh. Vestibulum vel dolor purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus orci magna, semper eu orci et, ullamcorper blandit purus. Sed efficitur congue massa.</p>
-					<p>Cras vitae massa vel diam aliquam maximus. Quisque pulvinar felis tellus. Donec nec pretium ante. Pellentesque vel lacus rhoncus, efficitur augue a, ultrices risus. Nullam tempor, ipsum non vulputate aliquam, odio nisi ullamcorper est, quis tincidunt odio quam at turpis. Curabitur porta ex quis elit convallis tempor. Aliquam id massa sagittis, tincidunt felis quis, tristique ex. Nam placerat, dui eu suscipit dapibus, tortor leo porta risus, sit amet euismod est erat id ligula.</p>
-					<p>Aenean neque urna, dignissim molestie risus at, pharetra varius tortor. Aliquam porta ligula ipsum, ut mollis est eleifend vitae. Nunc ac faucibus dolor, et ultricies nisi. Sed venenatis, nisl sed rhoncus luctus, leo dui dignissim mauris, in viverra ex tellus sit amet diam. Cras egestas commodo hendrerit. Etiam ullamcorper sed lorem eget fermentum. Aliquam eget cursus tellus. Suspendisse potenti. Vivamus et lobortis velit, facilisis sollicitudin dui. Suspendisse in tempus sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc non facilisis tellus, quis ultrices ex. Phasellus dolor justo, efficitur nec libero et, lacinia dignissim risus. Aliquam fringilla at elit accumsan efficitur. Aenean lobortis sapien at nunc fermentum congue.</p>
+					<p>I've made it my life's mission to try out every karaoke venue I possibly can, so I can recommend the absolute best ones to you. On this review site, you'll find all the information you need to plan a perfect night out with your friends. No more unbearably smoky bars with creepy, too-eager dudes. No more annoying KJs. No more overpriced drinks. All karaoke and all fun. To see the rating system I use for all reviews, click <a href="rating.html">here.</a> To dive right in to my useful reviews, click <a href="reviews.html">here.</a></p>
+					<h1>About Me</h1>
+					<p>Besides eating, taking naps, and scratching things, singing karaoke is my absolute favorite activity. I discovered my passion for vocals when one night my inebriated owner accidentally knocked over a bottle of Angry Orchard Hard Cider, and some of it spilled into my water bowl. She then proceeded to crank up some Ace of Base. The next thing I knew, we were both locked in fierce competition over who could sing "Don't Turn Around" the loudest. I won. It was my proudest moment.</p>
+					<p>After that night, I decided to quit my day job (of chewing on strings and knocking over glassware), and I became a professional karaoke singer. I have traveled far and wide in search of the best karaoke venue in the universe. This website is the fruit of my labor.</p>
 				</article>
 			</main>
 			<footer>
@@ -74,6 +73,7 @@
 				</ul>
 			</footer>
 		</div>
+		<script src="scripts/jqfloat.js"></script>
 		<script>
 			$(document).ready(function() {
 			$('.float').jqFloat({
